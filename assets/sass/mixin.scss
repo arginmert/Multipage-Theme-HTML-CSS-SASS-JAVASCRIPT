@@ -1,0 +1,15 @@
+@mixin radius($par){
+    border-radius: $par;
+    -webkit-border-radius: $par;
+    -moz-border-radius: $par;
+    -ms-border-radius: $par;
+    -o-border-radius: $par;
+}
+
+@mixin scale($par){
+    transform: scale($par);
+    -webkit-transform: scale($par);
+    -moz-transform: scale($par);
+    -ms-transform: scale($par);
+    -o-transform: scale($par);
+}

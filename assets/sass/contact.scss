@@ -1,0 +1,85 @@
+#contact{
+    min-height: 100vh;
+   
+    .contact-wrapper{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-top: 4rem;
+        .contact-left{
+            flex: 1;
+            flex-basis: 50%;
+            & h2 {
+                margin-bottom: 1rem;
+            }
+            & span {
+                margin-bottom: 1rem;
+            }
+        }
+        .contact-icons{
+            display: flex;
+            flex-direction: column;
+            gap: 1.7rem;
+            margin-top: 2rem;
+            .ico-group{
+                display: flex;
+                gap: 1.2rem;
+                & i{
+                    background-color: $gray-two;
+                    height: 50px;
+                    width: 50px;
+                    @include radius(50%);
+                    font-size: 1.8rem;
+                    line-height: 50px;
+                    text-align: center;
+                }
+                .adress-info{
+                    display: flex;
+                    flex-direction: column;
+                }
+            }
+        }
+    }
+    .contact-right{
+        flex: 1;
+        flex-basis: 50%;
+    }
+    .contact-form {
+        flex:1;
+        margin-top: 4rem;
+        form{
+            padding: 1.25rem;
+            background: $gray-two;
+            border: 1px solid $border-color;
+            .form-group{
+                display: flex;
+                flex-direction: column;
+                align-items: start;
+                width: 100%;
+                margin-bottom: 0,625rem;
+                padding: 0.7rem;
+
+                label{
+                    font-weight: 600;
+                    margin-bottom: 10px;
+                }
+                & input{
+                    width: 100%;
+                    color: $primary-color;
+                    background: $text-white;
+                    padding: 0.6rem;
+                    border: 1px solid $border-color;
+                    @include radius(7px);
+                }
+                & textarea{
+                    width: 100%;
+                    background:  $text-white;
+                    resize: none;
+                    padding: 0.6rem;
+                    color: $primary-color;
+                } 
+            }
+        }
+    }
+}

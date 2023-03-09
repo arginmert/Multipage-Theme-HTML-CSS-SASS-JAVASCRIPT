@@ -1,0 +1,77 @@
+footer {
+    background-color: $gray;
+    color: $primary-color;
+    & a {
+        color: $primary-color!important;
+        display: block;
+        margin-bottom: 7px;
+        &:hover{
+            opacity: 0.5;
+        }
+    }
+    .footer-top {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 70px 0;
+        .footer-group:first-child,
+        .footer-group:last-child {
+            width: 270px;
+        }
+        .footer-social{
+            display: flex;
+            gap: 1.2rem;
+            margin-top: 1.2rem;
+            & i{
+                font-size: 1.25rem;
+                &:hover{
+                    color: $secondary-color;
+                }
+            }
+        }
+        .footer-group h3{
+            position: relative;
+            margin-bottom: 18px;
+            &::after{
+                content: "";
+                position: absolute;
+                height: 2px;
+                background-color: $secondary-color;
+                width: 90%;
+                bottom: 0;
+                left: 0;
+            }
+        }
+        .footer-group .footer-links i{
+            margin-right: 12px;
+            font-size: 1.1rem;
+        }
+        @include lg{
+            & {
+                flex-wrap: wrap;
+                padding: 35px 20px;
+                justify-content: start;
+                .footer-group{
+                    width: 50%; 
+                    margin-bottom: 2rem; 
+                }
+                .footer-group:first-child {
+                    width:100%;
+                    margin-bottom: 2rem;
+                }
+            }
+        }
+        @include sm {
+            .footer-group{
+                width: 50%; 
+                margin-bottom: 2rem; 
+            }
+        }
+    }
+    .footer-bottom{
+        text-align: center;
+        background: $gray;
+        color: $primary-color;
+        padding: 8px 0;
+    }
+}

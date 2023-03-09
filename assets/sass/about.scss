@@ -1,0 +1,67 @@
+#about-page{
+    margin-top: 1.2rem;
+    margin-bottom: 3.75rem;
+    .about-content{
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+        align-items: center;
+        margin-top: 2rem;
+        .first-contentAbout{
+            display: flex;
+            gap: 2.3rem;
+            align-items: center;
+            @include lg {
+                flex-direction: column;
+                flex-wrap: wrap;
+            }
+            .about-left{
+                flex-basis: 30%;
+                .about-image{
+                    width: 450px;
+                    height: 400px;
+                    @include lg {
+                        width: 350px;
+                    height: 300px;
+                    }
+                    & img{
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        @include radius(7px);
+                    }
+                    
+                }
+            }
+    
+        }
+
+        .second-contentAbout {
+            display: flex;
+            background-image: url("../images/about-dotted-bg.png");
+            background-repeat: no-repeat;
+            background-position: top left;
+            background-size: auto;
+            padding: 0 3%;
+            justify-content: space-between;
+            gap: 3rem;
+            @include md {
+                flex-direction: column;
+                flex-wrap: wrap;
+            }
+            & h3 {
+                margin-bottom: 2rem;
+            }
+            .left-aboutcontent{
+                flex-basis: 50%;
+                background-color: $gray;
+                padding: 1rem;
+            }
+            .right-aboutcontent{
+                flex-basis: 50%;
+                background-color: $gray;
+                padding: 1rem;
+            }
+        }
+    }
+}

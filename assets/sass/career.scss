@@ -1,0 +1,93 @@
+#career {
+    margin-top: 20px;
+    min-height: 100vh;
+    background-color: $gray-two;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    .career-wrapper {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 1.25rem;
+        .career-jobs {
+            display: flex;
+            flex-direction: column;
+            gap: 1.25rem;
+            flex:1;
+            flex-basis: 30%;
+            .accordion-title {
+                display: block;
+                background: $primary-color;
+                color: $text-white;
+                font-size: 1.2rem;
+                width: 100%;
+                cursor: pointer;
+                padding: 18px;
+                transition: $transition;
+                -webkit-transition: $transition;
+                -moz-transition: $transition;
+                -ms-transition: $transition;
+                -o-transition: $transition;
+                &.active,
+                &.accordion-title:hover {
+                    background: $secondary-color;
+                }
+            }
+            .panel {
+                padding: 1.2rem 18px;
+                display: none;
+                background-color: white;
+                overflow: hidden;
+                transition: $transition;
+                -webkit-transition: $transition;
+                -moz-transition: $transition;
+                -ms-transition: $transition;
+                -o-transition: $transition;
+            }
+        }
+        .career-apply {
+            flex:1;
+            flex-basis: 60%;
+            form{
+                padding: 1.25rem;
+                background: #fff;
+                .form-group{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: start;
+                    width: 100%;
+                    margin-bottom: 0,625rem;
+                    padding: 0.7rem;
+
+                    label{
+                        font-weight: 600;
+                        margin-bottom: 10px;
+                    }
+                    & input{
+                        width: 100%;
+                        color: $primary-color;
+                        background: $gray-two;
+                        padding: 0.6rem;
+                        border: 1px solid $border-color;
+                        @include radius(7px);
+                        &::file-selector-button {
+                            font-weight: 500;
+                            color: $text-white;
+                            background-color: $primary-color;
+                            padding: 0.5em 0.7rem;
+                            @include radius(14px);
+                        }
+                    }
+                    & textarea{
+                        width: 100%;
+                        background: $gray-two;
+                        resize: none;
+                        padding: 0.6rem;
+                        color: $primary-color;
+                    } 
+                }
+            }
+        }
+    }
+}

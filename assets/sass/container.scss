@@ -1,0 +1,79 @@
+.container{
+    padding:0 7%;
+    margin: 0 auto;
+}
+section{
+    padding-top: 3.75rem; //60px
+    padding-bottom: 3.75rem; //60px
+    max-width: 100vw;
+}
+.section-title{
+    text-align: center;
+    width: 627px;
+    margin: 0 auto;
+    margin-bottom: 2.5rem;
+}
+
+.page-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 10.5rem;
+    width: 95%;
+    background:linear-gradient(0deg, rgba(22, 36, 102, 0.9), rgba(22, 36, 102, 0.9)), url("../images/cta-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: $text-white;
+    border-radius: 0 0 200px 0;
+    -webkit-border-radius: 0 0 200px 0;
+    -moz-border-radius: 0 0 200px 0;
+    -ms-border-radius: 0 0 200px 0;
+    -o-border-radius: 0 0 200px 0;
+    margin-bottom: 1rem;
+    @include sm {
+        & {
+            height: 5.5rem;
+        }
+        & h1{
+            height: 2.5rem;
+        }
+    }  
+    @include lg {
+        & {
+            height: 7.5rem;
+        }
+        & h1{
+            height: 2.5rem;
+        }
+    }  
+}
+
+@include sm {
+    .container{
+        padding: 0 3%;
+    }
+    .section{
+        padding-top: 2.75rem;
+        padding-bottom: 2.75rem; //60px
+    }
+    .section-title{
+        width: 70%;
+        margin-bottom: 1.2rem;
+        margin: 0 auto;
+    }
+}
+@include md {
+    .container{
+        padding: 0 5%;
+    }
+    .section{
+        padding-top: 3rem;
+        padding-bottom: 3rem; //60px
+    }
+    .section-title{
+        width: 70%;
+        margin-bottom: 1.2rem;
+    }
+}

@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+$text: "Poppins", sans-serif;
+$text-color: $primary-color;
+
+h1{
+    font-size: 3rem; //48px
+    line-height: 125%;
+    font-weight: 700;
+}
+h2{
+    font-size: 2.438rem; //39px
+    font-weight: 600;
+}
+h3{
+    font-size: 1.563rem; //25px
+    font-weight: 600;
+}
+
+@include sm {
+    h1{
+        font-size: 2.5rem;
+    }
+}
